@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MimeKit" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.EntityFrameworkCore.Relational" />
+    <None Remove="NETCore.MailKit" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.AspNetCore" />
+    <None Remove="Microsoft.AspNetCore.Razor.Runtime" />
+    <None Remove="Views\Admin\Navbar\" />
+    <None Remove="Views\Admin\SubNavbar\" />
+    <None Remove="Validators\Admin\Navbar\" />
+    <None Remove="Validators\Admin\SubNavbar\" />
+    <None Remove="ViewModels\Admin\Navbar\" />
+    <None Remove="ViewModels\Admin\SubNavbar\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\NavbarHeader\" />
+    <None Remove="Views\Shared\Components\NavbarFooter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\CODEOWNERS" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\SUPPORT.md" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\release-drafter.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\dependabot.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\workflows\css.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\workflows\lint.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\workflows\codeql.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\workflows\docs.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\workflows\js.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\workflows\node-sass.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\workflows\browserstack.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\workflows\release-notes.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\workflows\bundlewatch.yml" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\ISSUE_TEMPLATE\feature_request.md" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <None Include="wwwroot\client\assets\bootstrap-5.0.2\bootstrap-5.0.2\.github\ISSUE_TEMPLATE\config.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MimeKit" Version="3.4.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.0" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Admin\Navbar\" />
+    <Folder Include="Views\Admin\SubNavbar\" />
+    <Folder Include="Validators\Admin\Navbar\" />
+    <Folder Include="Validators\Admin\SubNavbar\" />
+    <Folder Include="ViewModels\Admin\Navbar\" />
+    <Folder Include="ViewModels\Admin\SubNavbar\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\NavbarHeader\" />
+    <Folder Include="Views\Shared\Components\NavbarFooter\" />
+  </ItemGroup>
+</Project>

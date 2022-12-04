@@ -1,0 +1,20 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<NavbarManagement.Database.Models.Navbar>
+
+@foreach (var navbar in Model)
+{
+    <div class=" col-xl-3 col-lg-2 col-sm-6">
+        <div class="single-footer pb--40">
+            <div class="footer-title">
+                <h3>@navbar.Name</h3>
+            </div>
+            <ul class="footer-list normal-list">
+                @foreach (var subNavbar in navbar.SubNavbars)
+                {
+                    <li><a href="#">@subNavbar.Name</a></li>
+                }
+
+            </ul>
+        </div>
+    </div>
+}

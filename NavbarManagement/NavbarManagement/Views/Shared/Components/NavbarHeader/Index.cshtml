@@ -1,0 +1,26 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<NavbarManagement.Database.Models.Navbar>
+
+@foreach (var navbar in Model)
+{
+    <li class="menu-item has-children">
+        <a href="">
+            @if (navbar.IsBold)
+            {
+                <b>@navbar.Name</b>
+            }
+            else
+            {
+                @navbar.Name
+            }
+            <i class="fas fa-chevron-down dropdown-arrow"></i>
+        </a>
+
+        <ul class="sub-menu">
+            @foreach (var subNavbar in navbar.SubNavbars)
+            {
+                <li> <a asp-route="@subNavbar.URL">@subNavbar.Name</a></li>
+            }
+        </ul>
+    </li>
+}
