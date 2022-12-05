@@ -8,6 +8,6 @@ namespace NavbarManagement.ViewModels.Admin.SubNavbar
         public string URL { get; set; }
         public int Order { get; set; }
         public int NavbarId { get; set; }
-        public List<ListItemViewModel>? Navbar { get; set; }
+        public List<NavbarListItemViewModel>? Navbar { get; set; }
     }
 }
