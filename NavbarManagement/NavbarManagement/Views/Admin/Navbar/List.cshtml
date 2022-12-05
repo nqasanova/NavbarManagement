@@ -1,20 +1,28 @@
 ﻿@model List<ListItemViewModel>
 
 <div class="col-lg-12">
+    <div class="row justify-content-end">
+        <div class="">
+            <a asp-route="admin-navbar-add" target="_blank" class="btn btn-secondary">Add New Navbar</a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
     <div class="card">
         <div class="card-header">
-            <h4 class="card-title">Navbar</h4>
+            <h4 class="card-title">Navbars</h4>
         </div><!--end card-header-->
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-striped mb-0">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Order</th>
-                            <th>IsBold</th>
-                            <th>IsHeader</th>
-                            <th>IsFooter</th>
+                            <th>Navbar Name</th>
+                            <th>Navber URL</th>
+                            <th>Navber Order</th>
+                            <th>Is Navbar Main?</th>
+                            <th>Is Navbar for Header?</th>
+                            <th>Is Navbar for Footer?</th>
                             <th class="text-end">Action</th>
                         </tr>
                     </thead>
@@ -23,14 +31,17 @@
                         {
                             <tr>
                                 <td>@navbar.Name</td>
+                                <td>@navbar.URL</td>
                                 <td>@navbar.Order</td>
                                 <td>@navbar.IsBold</td>
                                 <td>@navbar.IsHeader</td>
                                 <td>@navbar.IsFooter</td>
                                 <td class="text-end">
                                     <a asp-route="admin-navbar-update" asp-route-id="@navbar.Id"><i class="las la-pen text-secondary font-16"></i></a>
-                                    <form class="d-none" method="POST" asp-route="admin-navbar-delete" asp-route-id="@navbar.Id" id="update-@navbar.Id">
-                                        </form>
+                                    <form method="POST" asp-route="admin-navbar-delete" asp-route-id="@navbar.Id" id="book-form-@navbar.Id"></form>
+                                    <button type="submit" form="book-form-@navbar.Id">
+                                        <i class="las la-trash-alt text-secondary font-16"></i>
+                                    </button>
                                 </td>
                             </tr>
                         }
