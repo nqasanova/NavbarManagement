@@ -103,7 +103,7 @@ namespace NavbarManagement.Controllers.Admin
             if (!ModelState.IsValid)
             {
 
-                //model.Navbar = _dataContext.Navbars.Select(n => new NavbarListItemViewModel(n.Id, n.Name)).ToList();
+                model.Navbar = _dataContext.Navbars.Select(n => new NavbarListItemViewModel(n.Id, n.Name)).ToList();
                 return View("~/Views/Admin/SubNavbar/Update.cshtml", model);
             }
             var subnavbar = _dataContext.SubNavbars.Include(n => n.Navbar).FirstOrDefault(n => n.Id == model.Id);
