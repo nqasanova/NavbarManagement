@@ -24,7 +24,7 @@ namespace NavbarManagement.Controllers.Admin
         {
             var model = await _dataContext.Navbars
                 .Select(n => new ListItemViewModel(
-                   n.Id, n.Name, n.Order, n.IsBold, n.IsHeader, n.IsFooter)).ToListAsync();
+                   n.Id, n.Name, n.URL, n.Order, n.IsBold, n.IsHeader, n.IsFooter)).ToListAsync();
 
             return View("~/Views/Admin/Navbar/List.cshtml", model);
         }
