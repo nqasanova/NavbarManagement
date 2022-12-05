@@ -5,7 +5,7 @@ using NavbarManagement.Database.Models;
 
 namespace NavbarManagement.Database.Configurations
 {
-    public class NavbarConfiguration
+    public class NavbarConfiguration : IEntityTypeConfiguration<Navbar>
     {
         public void Configure(EntityTypeBuilder<Navbar> builder)
         {
