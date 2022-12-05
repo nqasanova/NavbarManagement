@@ -1,10 +1,11 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NavbarManagement.Database.Models;
 
 namespace NavbarManagement.Database.Configurations
 {
-    public class SubNavbarConfiguration
+    public class SubNavbarConfiguration : IEntityTypeConfiguration<SubNavbar>
     {
         public void Configure(EntityTypeBuilder<SubNavbar> builder)
         {
