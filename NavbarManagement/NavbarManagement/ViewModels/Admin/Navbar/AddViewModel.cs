@@ -5,7 +5,6 @@ namespace NavbarManagement.ViewModels.Admin.Navbar
 {
     public class AddViewModel
     {
-        [Required]
         public string Name { get; set; }
         public string URL { get; set; }
         public int Order { get; set; }
