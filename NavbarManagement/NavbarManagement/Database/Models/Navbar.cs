@@ -11,6 +11,6 @@ namespace NavbarManagement.Database.Models
         public bool IsBold { get; set; }
         public bool IsHeader { get; set; }
         public bool IsFooter { get; set; }
-        public List<SubNavbar> SubNavbars { get; set; }
+        public List<SubNavbar>? SubNavbars { get; set; }
     }
 }
