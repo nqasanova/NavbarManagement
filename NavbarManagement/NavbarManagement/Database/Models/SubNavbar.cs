@@ -9,6 +9,6 @@ namespace NavbarManagement.Database.Models
         public string URL { get; set; }
         public int Order { get; set; }
         public int NavbarId { get; set; }
-        public Navbar Navbar { get; set; }
+        public Navbar? Navbar { get; set; }
     }
 }
